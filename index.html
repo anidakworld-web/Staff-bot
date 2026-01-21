@@ -2,11 +2,12 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>Elite Bot</title>
+<title>Elite Staff</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta property="og:title" content="Elite Bot">
-<meta property="og:description" content="Быстрый и безопасный доступ">
+<!-- Telegram preview -->
+<meta property="og:title" content="ELITE STAFF">
+<meta property="og:description" content="Официальные ресурсы проекта">
 <meta property="og:image" content="logo.png">
 
 <style>
@@ -67,30 +68,31 @@ body::before {
     margin-bottom: 14px;
 }
 
+/* ✨ Золотой заголовок */
+.animated-text {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: gold;
+    text-shadow: 0 0 12px gold;
+    margin-bottom: 12px;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 6px gold; }
+    to { text-shadow: 0 0 20px gold; }
+}
+
 h1 {
     font-size: 22px;
-    margin: 10px 0;
+    margin: 6px 0;
 }
 
 p {
     font-size: 15px;
     opacity: .85;
     margin-bottom: 20px;
-}
-
-/* ✨ Золотой текст */
-.animated-text {
-    font-size: 17px;
-    font-weight: 600;
-    color: gold;
-    text-shadow: 0 0 10px gold;
-    margin-bottom: 10px;
-    animation: glow 1.5s infinite alternate;
-}
-
-@keyframes glow {
-    from { text-shadow: 0 0 6px gold; }
-    to { text-shadow: 0 0 18px gold; }
 }
 
 /* 🔘 Кнопки */
@@ -138,6 +140,14 @@ a.button:active {
     box-shadow: inset 0 0 12px rgba(255,215,0,.15);
 }
 
+/* 📞 Актуальные контакты */
+.button.contacts {
+    background: rgba(0,136,204,0.15);
+    color: #7fcfff;
+    border: 1px solid rgba(0,136,204,0.4);
+    box-shadow: inset 0 0 14px rgba(0,136,204,0.25);
+}
+
 .icon {
     margin-right: 6px;
 }
@@ -153,12 +163,12 @@ if (navigator.webdriver) document.body.innerHTML = 'Access denied';
 <body>
 
 <div class="container">
-    <img src="logo.png" class="logo" alt="Elite">
+    <img src="logo.png" class="logo" alt="Elite Staff">
 
     <div class="animated-text">ELITE STAFF</div>
 
-    <h1>Elite Telegram Bot</h1>
-    <p>Выберите удобный способ перехода</p>
+    <h1>Официальный переходник</h1>
+    <p>Выберите нужный раздел</p>
 
     <a class="button primary" href="https://t.me/elite_st_rz1_bot">
         Открыть Telegram
@@ -168,9 +178,12 @@ if (navigator.webdriver) document.body.innerHTML = 'Access denied';
         <span class="icon">🌟</span> Сайт 24/7
     </a>
 
-    <!-- 🪪 Новая кнопка -->
     <a class="button visit" href="http://stuffeliteua.biz" target="_blank">
         <span class="icon">🪪</span> Визитка
+    </a>
+
+    <a class="button contacts" href="https://t.me/es_gobot" target="_blank">
+        <span class="icon">📞</span> Актуальные контакты
     </a>
 </div>
 
